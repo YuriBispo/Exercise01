@@ -4,3 +4,11 @@ C:\dev\Seleções\VipCommerce\Infra\obj\Debug\netcoreapp2.1\Infra.csprojAssembly
 C:\dev\Seleções\VipCommerce\Infra\obj\Debug\netcoreapp2.1\Infra.csproj.CoreCompileInputs.cache
 C:\dev\Seleções\VipCommerce\Infra\obj\Debug\netcoreapp2.1\Infra.AssemblyInfoInputs.cache
 C:\dev\Seleções\VipCommerce\Infra\obj\Debug\netcoreapp2.1\Infra.AssemblyInfo.cs
+C:\dev\Seleções\VipCommerce\Infra\bin\Debug\netcoreapp2.1\Infra.pdb
+C:\dev\Seleções\VipCommerce\Infra\obj\Debug\netcoreapp2.1\Infra.dll
+C:\dev\Seleções\VipCommerce\Infra\obj\Debug\netcoreapp2.1\Infra.pdb
+C:\dev\Seleções\VipCommerce\Infra\bin\Debug\netcoreapp2.1\Domain.dll
+C:\dev\Seleções\VipCommerce\Infra\bin\Debug\netcoreapp2.1\Domain.pdb
+C:\dev\Seleções\VipCommerce\Infra\obj\Debug\netcoreapp2.1\Infra.csproj.CopyComplete
+C:\dev\Seleções\VipCommerce\Infra\bin\Debug\netcoreapp2.1\Microsoft.EntityFrameworkCore.Relational.dll
+C:\dev\Seleções\VipCommerce\Infra\bin\Debug\netcoreapp2.1\Microsoft.EntityFrameworkCore.Relational.xml

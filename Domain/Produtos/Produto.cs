@@ -6,7 +6,7 @@ using System.Text;
 
 namespace Domain.Produtos
 {
-  public class Produto : IEntity
+  public class Produto : IProduto
   {
     public Produto(Guid id, 
       Tamanho tamanho, 
@@ -19,10 +19,17 @@ namespace Domain.Produtos
       Valor = valor ?? throw new ArgumentNullException(nameof(valor));
     }
 
+    //Empty ctor for EF
+    protected Produto(){}
+
     public Guid Id { get; private set; }
     public Tamanho Tamanho { get; private set; }
     public Fabricacao Fabricacao { get; private set; }
     public Dinheiro Valor { get; private set; }
 
+    public Produto ToEntity()
+    {
+      throw new NotImplementedException();
+    }
   }
 }

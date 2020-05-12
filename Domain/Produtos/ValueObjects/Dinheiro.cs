@@ -13,6 +13,8 @@ namespace Domain.Produtos.ValueObjects
       this.dinheiro = dinheiro;
     }
 
+    private Dinheiro(){}
+
     public bool Equals(Dinheiro other)
     {
       return dinheiro == other.dinheiro;

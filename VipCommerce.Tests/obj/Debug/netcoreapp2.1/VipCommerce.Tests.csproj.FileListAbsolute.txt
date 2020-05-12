@@ -1,0 +1,16 @@
+C:\dev\Seleções\VipCommerce\VipCommerce.Tests\bin\Debug\netcoreapp2.1\VipCommerce.Tests.deps.json
+C:\dev\Seleções\VipCommerce\VipCommerce.Tests\bin\Debug\netcoreapp2.1\VipCommerce.Tests.dll
+C:\dev\Seleções\VipCommerce\VipCommerce.Tests\obj\Debug\netcoreapp2.1\VipCommerce.Tests.csprojAssemblyReference.cache
+C:\dev\Seleções\VipCommerce\VipCommerce.Tests\obj\Debug\netcoreapp2.1\VipCommerce.Tests.csproj.CoreCompileInputs.cache
+C:\dev\Seleções\VipCommerce\VipCommerce.Tests\obj\Debug\netcoreapp2.1\VipCommerce.Tests.AssemblyInfoInputs.cache
+C:\dev\Seleções\VipCommerce\VipCommerce.Tests\obj\Debug\netcoreapp2.1\VipCommerce.Tests.AssemblyInfo.cs
+C:\dev\Seleções\VipCommerce\VipCommerce.Tests\bin\Debug\netcoreapp2.1\Infra.dll
+C:\dev\Seleções\VipCommerce\VipCommerce.Tests\bin\Debug\netcoreapp2.1\Infra.pdb
+C:\dev\Seleções\VipCommerce\VipCommerce.Tests\obj\Debug\netcoreapp2.1\VipCommerce.Tests.csproj.CopyComplete
+C:\dev\Seleções\VipCommerce\VipCommerce.Tests\bin\Debug\netcoreapp2.1\VipCommerce.Tests.pdb
+C:\dev\Seleções\VipCommerce\VipCommerce.Tests\bin\Debug\netcoreapp2.1\Domain.dll
+C:\dev\Seleções\VipCommerce\VipCommerce.Tests\bin\Debug\netcoreapp2.1\Domain.pdb
+C:\dev\Seleções\VipCommerce\VipCommerce.Tests\obj\Debug\netcoreapp2.1\VipCommerce.Tests.dll
+C:\dev\Seleções\VipCommerce\VipCommerce.Tests\obj\Debug\netcoreapp2.1\VipCommerce.Tests.pdb
+C:\dev\Seleções\VipCommerce\VipCommerce.Tests\bin\Debug\netcoreapp2.1\Microsoft.EntityFrameworkCore.Relational.dll
+C:\dev\Seleções\VipCommerce\VipCommerce.Tests\bin\Debug\netcoreapp2.1\Microsoft.EntityFrameworkCore.Relational.xml

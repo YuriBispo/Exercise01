@@ -6,6 +6,6 @@ namespace Domain
 {
   public interface IEntity
   {
-    Guid Id { get; }
+    Guid Id { get; }    
   }
 }

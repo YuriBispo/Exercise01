@@ -1,0 +1,9 @@
+C:\dev\Seleções\VipCommerce\Domain\bin\Debug\netcoreapp2.1\Domain.deps.json
+C:\dev\Seleções\VipCommerce\Domain\bin\Debug\netcoreapp2.1\Domain.dll
+C:\dev\Seleções\VipCommerce\Domain\bin\Debug\netcoreapp2.1\Domain.pdb
+C:\dev\Seleções\VipCommerce\Domain\obj\Debug\netcoreapp2.1\Domain.csprojAssemblyReference.cache
+C:\dev\Seleções\VipCommerce\Domain\obj\Debug\netcoreapp2.1\Domain.csproj.CoreCompileInputs.cache
+C:\dev\Seleções\VipCommerce\Domain\obj\Debug\netcoreapp2.1\Domain.AssemblyInfoInputs.cache
+C:\dev\Seleções\VipCommerce\Domain\obj\Debug\netcoreapp2.1\Domain.AssemblyInfo.cs
+C:\dev\Seleções\VipCommerce\Domain\obj\Debug\netcoreapp2.1\Domain.dll
+C:\dev\Seleções\VipCommerce\Domain\obj\Debug\netcoreapp2.1\Domain.pdb

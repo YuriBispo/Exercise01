@@ -15,6 +15,8 @@ namespace Domain.Produtos.ValueObjects
       this.unidadeDeMedida = unidadeDeMedida ?? throw new ArgumentNullException(nameof(unidadeDeMedida));
     }
 
+    private Tamanho() { }
+
     public override bool Equals(object obj)
     {
       if(obj is Tamanho)
