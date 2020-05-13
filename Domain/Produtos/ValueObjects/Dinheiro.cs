@@ -35,9 +35,34 @@ namespace Domain.Produtos.ValueObjects
       return HashCode.Combine(dinheiro);
     }
 
+    public decimal ToDecimal()
+    {
+      return dinheiro;
+    }
+
     public override string ToString()
     {
       return string.Format("R$ {0:0,00}", dinheiro);
+    }
+
+    public bool MaiorQue(Dinheiro right)
+    {
+      return dinheiro > right.dinheiro;
+    }
+
+    public bool MenorQue(Dinheiro right)
+    {
+      return dinheiro < right.dinheiro;
+    }
+
+    public bool MaiorOuIgualA(Dinheiro right)
+    {
+      return dinheiro >= right.dinheiro;
+    }
+
+    public bool MenorOuIgualA(Dinheiro right)
+    {
+      return dinheiro <= right.dinheiro;
     }
   }
 }

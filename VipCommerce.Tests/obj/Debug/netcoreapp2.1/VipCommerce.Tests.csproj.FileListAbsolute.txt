@@ -14,3 +14,7 @@ C:\dev\Seleções\VipCommerce\VipCommerce.Tests\obj\Debug\netcoreapp2.1\VipComme
 C:\dev\Seleções\VipCommerce\VipCommerce.Tests\obj\Debug\netcoreapp2.1\VipCommerce.Tests.pdb
 C:\dev\Seleções\VipCommerce\VipCommerce.Tests\bin\Debug\netcoreapp2.1\Microsoft.EntityFrameworkCore.Relational.dll
 C:\dev\Seleções\VipCommerce\VipCommerce.Tests\bin\Debug\netcoreapp2.1\Microsoft.EntityFrameworkCore.Relational.xml
+C:\dev\Seleções\VipCommerce\VipCommerce.Tests\bin\Debug\netcoreapp2.1\NUnit3.TestAdapter.dll
+C:\dev\Seleções\VipCommerce\VipCommerce.Tests\bin\Debug\netcoreapp2.1\NUnit3.TestAdapter.pdb
+C:\dev\Seleções\VipCommerce\VipCommerce.Tests\bin\Debug\netcoreapp2.1\nunit.engine.dll
+C:\dev\Seleções\VipCommerce\VipCommerce.Tests\bin\Debug\netcoreapp2.1\nunit.engine.api.dll

@@ -6,11 +6,11 @@ using System.Text;
 
 namespace Domain.Produtos
 {
-  public class Produto : IProduto
+  public abstract class Produto : IProduto
   {
     public Produto(Guid id, 
       Tamanho tamanho, 
-      Fabricacao fabricacao, 
+      Fabricacao fabricacao,
       Dinheiro valor)
     {
       Id = id;
@@ -26,5 +26,7 @@ namespace Domain.Produtos
     public Tamanho Tamanho { get; private set; }
     public Fabricacao Fabricacao { get; private set; }
     public Dinheiro Valor { get; private set; }
+
+    public abstract decimal CalcularImposto();
   }
 }

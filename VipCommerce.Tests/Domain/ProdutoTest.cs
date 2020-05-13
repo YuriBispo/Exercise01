@@ -12,7 +12,7 @@ namespace VipCommerce.Tests.Domain
   public class ProdutoTest
   {
     [SetUp]
-    public void SetUp()
+    protected void SetUp()
     {
 
     }
