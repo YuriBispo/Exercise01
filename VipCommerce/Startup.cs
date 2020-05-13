@@ -9,6 +9,9 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Configuration;
+using Infra.EntityFramework.Repositories;
+using App.IServices;
+using App.Services;
 
 namespace WebApi
 {
@@ -30,6 +33,11 @@ namespace WebApi
       {
         opt.UseMySql(conn);
       });
+
+      services.AddScoped<IProdutoAppService, ProdutoAppService>();
+      services.AddScoped<IProdutoRepository, ProdutoRepository>();
+
+      services.AddMvcCore();
     }
 
     // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -40,10 +48,7 @@ namespace WebApi
         app.UseDeveloperExceptionPage();
       }
 
-      app.Run(async (context) =>
-      {
-        await context.Response.WriteAsync("Hello World!");
-      });
+      app.UseMvc();      
     }
   }
 }
