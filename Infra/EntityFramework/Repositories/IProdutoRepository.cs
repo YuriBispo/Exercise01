@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace Infra.EntityFramework.Repositories
 {
-  public interface IProdutoRepository
+  public interface IProdutoRepository : IRepository
   {
-    IQueryable<Produto> Get(Expression<Func<object, bool>> expression);
+    IQueryable<Produto> Get(Expression<Func<Produto, bool>> expression);
     Task<Produto> Add(Produto entity);
     Task<Produto> Update(Produto entity);
-    Task<Produto> Remove(Guid id);
+    Task<Produto> Remove(Produto id);
   }
 }

@@ -1,4 +1,5 @@
 using Domain.Produtos;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Linq;
 using System.Linq.Expressions;
@@ -15,24 +16,32 @@ namespace Infra.EntityFramework.Repositories
 			this.context = context;
 		}
 
-    public Task<Produto> Add(Produto entity)
+    public async Task<Produto> Add(Produto entity)
     {
-      throw new NotImplementedException();
+      context.Add(entity);
+      return await Task.FromResult(entity);
     }
 
-    public IQueryable<Produto> Get(Expression<Func<object, bool>> expression)
+    public async Task CommitChanges()
     {
-      throw new NotImplementedException();
+      await context.SaveChangesAsync();
     }
 
-    public Task<Produto> Remove(Guid id)
+    public IQueryable<Produto> Get(Expression<Func<Produto, bool>> expression)
     {
-      throw new NotImplementedException();
+      return context.Produtos.AsNoTracking().Where(expression);
+    }
+
+    public async Task<Produto> Remove(Produto entity)
+    {
+      context.Remove(entity);
+      return await Task.FromResult(entity);
     }
 
     public Task<Produto> Update(Produto entity)
     {
-      throw new NotImplementedException();
+      context.Update(entity);
+      return Task.FromResult(entity);
     }
   }
 }

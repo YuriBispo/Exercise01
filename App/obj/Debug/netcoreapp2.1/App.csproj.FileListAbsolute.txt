@@ -1,7 +1,6 @@
 C:\dev\Seleções\VipCommerce\App\bin\Debug\netcoreapp2.1\App.deps.json
 C:\dev\Seleções\VipCommerce\App\bin\Debug\netcoreapp2.1\App.dll
 C:\dev\Seleções\VipCommerce\App\bin\Debug\netcoreapp2.1\App.pdb
-C:\dev\Seleções\VipCommerce\App\obj\Debug\netcoreapp2.1\App.csprojAssemblyReference.cache
 C:\dev\Seleções\VipCommerce\App\obj\Debug\netcoreapp2.1\App.csproj.CoreCompileInputs.cache
 C:\dev\Seleções\VipCommerce\App\obj\Debug\netcoreapp2.1\App.AssemblyInfoInputs.cache
 C:\dev\Seleções\VipCommerce\App\obj\Debug\netcoreapp2.1\App.AssemblyInfo.cs

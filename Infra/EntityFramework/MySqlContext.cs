@@ -5,7 +5,7 @@ namespace Infra.EntityFramework
 {
   public class MySqlContext : DbContext
   {
-    DbSet<Produto> Produtos { get; set; }
+    public DbSet<Produto> Produtos { get; set; }
 
     public MySqlContext(DbContextOptions<MySqlContext> options) : base(options)
     {
@@ -25,9 +25,6 @@ namespace Infra.EntityFramework
         .OwnsOne(x => x.Valor)
         .Property<decimal>("Valor")
         .HasColumnName("Valor");
-
-      ////check if DB exists
-      //Database.EnsureCreated();
     }
   }
 }

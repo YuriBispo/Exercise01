@@ -26,10 +26,5 @@ namespace Domain.Produtos
     public Tamanho Tamanho { get; private set; }
     public Fabricacao Fabricacao { get; private set; }
     public Dinheiro Valor { get; private set; }
-
-    public Produto ToEntity()
-    {
-      throw new NotImplementedException();
-    }
   }
 }

@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace Infra.EntityFramework.Repositories
 {
-	public interface IRepository<T>
+	public interface IRepository
 	{
 		Task CommitChanges();
 	}
