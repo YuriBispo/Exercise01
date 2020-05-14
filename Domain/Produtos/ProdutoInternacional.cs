@@ -12,6 +12,8 @@ namespace Domain.Produtos
       : base(id, tamanho, fabricacao, valor)
     {
     }
+    
+    protected ProdutoInternacional() { }
 
     public override decimal CalcularImposto()
     {

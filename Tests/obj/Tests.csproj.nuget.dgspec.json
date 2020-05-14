@@ -4,6 +4,65 @@
     "C:\\dev\\Seleções\\VipCommerce\\Tests\\Tests.csproj": {}
   },
   "projects": {
+    "C:\\dev\\Seleções\\VipCommerce\\App\\App.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\dev\\Seleções\\VipCommerce\\App\\App.csproj",
+        "projectName": "App",
+        "projectPath": "C:\\dev\\Seleções\\VipCommerce\\App\\App.csproj",
+        "packagesPath": "C:\\Users\\yurib\\.nuget\\packages\\",
+        "outputPath": "C:\\dev\\Seleções\\VipCommerce\\App\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\yurib\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.1": {
+            "projectReferences": {
+              "C:\\dev\\Seleções\\VipCommerce\\Domain\\Domain.csproj": {
+                "projectPath": "C:\\dev\\Seleções\\VipCommerce\\Domain\\Domain.csproj"
+              },
+              "C:\\dev\\Seleções\\VipCommerce\\Infra\\Infra.csproj": {
+                "projectPath": "C:\\dev\\Seleções\\VipCommerce\\Infra\\Infra.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.1": {
+          "dependencies": {
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.1.0, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    },
     "C:\\dev\\Seleções\\VipCommerce\\Domain\\Domain.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -56,6 +115,66 @@
         }
       }
     },
+    "C:\\dev\\Seleções\\VipCommerce\\Infra\\Infra.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\dev\\Seleções\\VipCommerce\\Infra\\Infra.csproj",
+        "projectName": "Infra",
+        "projectPath": "C:\\dev\\Seleções\\VipCommerce\\Infra\\Infra.csproj",
+        "packagesPath": "C:\\Users\\yurib\\.nuget\\packages\\",
+        "outputPath": "C:\\dev\\Seleções\\VipCommerce\\Infra\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\yurib\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.1": {
+            "projectReferences": {
+              "C:\\dev\\Seleções\\VipCommerce\\Domain\\Domain.csproj": {
+                "projectPath": "C:\\dev\\Seleções\\VipCommerce\\Domain\\Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.1": {
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[2.1.1, )"
+            },
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.1.0, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    },
     "C:\\dev\\Seleções\\VipCommerce\\Tests\\Tests.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -82,6 +201,9 @@
         "frameworks": {
           "netcoreapp2.1": {
             "projectReferences": {
+              "C:\\dev\\Seleções\\VipCommerce\\App\\App.csproj": {
+                "projectPath": "C:\\dev\\Seleções\\VipCommerce\\App\\App.csproj"
+              },
               "C:\\dev\\Seleções\\VipCommerce\\Domain\\Domain.csproj": {
                 "projectPath": "C:\\dev\\Seleções\\VipCommerce\\Domain\\Domain.csproj"
               }

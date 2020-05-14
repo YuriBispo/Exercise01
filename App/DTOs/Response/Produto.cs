@@ -13,5 +13,13 @@ namespace App.DTOs.Response
     public Tamanho Tamanho { get; private set; }
     public Fabricacao Fabricacao { get; private set; }
     public Dinheiro Valor { get; private set; }
+
+    public Produto(Entity.Produto entity)
+    {
+      Id = entity.Id;
+      Tamanho = entity.Tamanho;
+      Fabricacao = entity.Fabricacao;
+      Valor = entity.Valor;
+    }
   }
 }

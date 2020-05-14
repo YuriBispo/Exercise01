@@ -17,9 +17,13 @@ namespace App.Services
       this.produtoRepository = produtoRepository;
     }
 
-    public Task<DTOs.Response.Produto> Add(DTOs.Request.Produto entity)
+    public async Task<DTOs.Response.Produto> Add(DTOs.Request.Produto entity)
     {
-      throw new NotImplementedException();
+      var a = await produtoRepository.Add(entity.ConvertToDomain());
+
+      await produtoRepository.CommitChanges();
+
+      return new DTOs.Response.Produto(a);
     }
 
     public DTOs.Response.Produto Get(Guid id)
@@ -40,6 +44,11 @@ namespace App.Services
     public Task<DTOs.Response.Produto> Update(DTOs.Request.Produto entity)
     {
       throw new NotImplementedException();
+    }
+
+    private void ValidateParameters(DTOs.Request.Produto produto)
+    {
+      
     }
   }
 }

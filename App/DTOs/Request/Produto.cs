@@ -10,24 +10,21 @@ namespace App.DTOs.Request
 {
   public class Produto
   {
-    public Guid Id { get; private set; }
-    public Fabricacao Fabricacao { get; private set; }
-    public Tamanho Tamanho { get; private set; }
-    public Dinheiro Valor { get; private set; }
+    public Guid Id { get; set; }
+    public Fabricacao Fabricacao { get; set; }
+    public string Tamanho { get; set; }
+    public decimal Valor { get; set; }
 
     public Entity.Produto ConvertToDomain()
     {
-      //TODO: Refactor. Reason: This line break OCP;
-      //Should be added a IoC container, maybe or some auto
+      var tamanho = Tamanho.Split(' ');
+      var novoTamanho = new Tamanho(Convert.ToDecimal(tamanho[0]), tamanho[1]);
+
       Entity.Produto produto = Fabricacao == Fabricacao.Nacional
-        ? ProdutoFactory.CriarProdutoNacional(Id,
-            Tamanho,
-            Fabricacao,
-            Valor)
-        : ProdutoFactory.CriarProdutoInternacional(Id,
-            Tamanho,
-            Fabricacao,
-            Valor);
+        ? ProdutoFactory
+          .CriarProdutoNacional(Id, novoTamanho, Fabricacao, new Dinheiro(Valor))
+        : ProdutoFactory
+          .CriarProdutoInternacional(Id, novoTamanho, Fabricacao, new Dinheiro(Valor));
 
       return produto;
     }

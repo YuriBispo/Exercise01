@@ -37,7 +37,9 @@ namespace WebApi
       services.AddScoped<IProdutoAppService, ProdutoAppService>();
       services.AddScoped<IProdutoRepository, ProdutoRepository>();
 
-      services.AddMvcCore();
+      services.AddMvcCore()
+        .AddJsonFormatters()
+        .AddDataAnnotations();
     }
 
     // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

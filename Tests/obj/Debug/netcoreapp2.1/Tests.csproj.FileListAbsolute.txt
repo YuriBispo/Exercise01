@@ -16,3 +16,9 @@ C:\dev\Seleções\VipCommerce\Tests\obj\Debug\netcoreapp2.1\Tests.AssemblyInfo.c
 C:\dev\Seleções\VipCommerce\Tests\obj\Debug\netcoreapp2.1\Tests.csproj.CopyComplete
 C:\dev\Seleções\VipCommerce\Tests\obj\Debug\netcoreapp2.1\Tests.dll
 C:\dev\Seleções\VipCommerce\Tests\obj\Debug\netcoreapp2.1\Tests.pdb
+C:\dev\Seleções\VipCommerce\Tests\bin\Debug\netcoreapp2.1\App.dll
+C:\dev\Seleções\VipCommerce\Tests\bin\Debug\netcoreapp2.1\Infra.dll
+C:\dev\Seleções\VipCommerce\Tests\bin\Debug\netcoreapp2.1\Microsoft.EntityFrameworkCore.Relational.dll
+C:\dev\Seleções\VipCommerce\Tests\bin\Debug\netcoreapp2.1\App.pdb
+C:\dev\Seleções\VipCommerce\Tests\bin\Debug\netcoreapp2.1\Infra.pdb
+C:\dev\Seleções\VipCommerce\Tests\bin\Debug\netcoreapp2.1\Microsoft.EntityFrameworkCore.Relational.xml

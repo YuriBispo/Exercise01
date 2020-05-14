@@ -4,6 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Requests = App.DTOs.Request;
 
 namespace WebApi
 {
@@ -23,9 +24,9 @@ namespace WebApi
     }
 
     [HttpPost]
-    public ActionResult Add()
+    public async Task<ActionResult> Add([FromBody] Requests.Produto produto)
     {
-      return Ok();
+      return Ok(await produtoAppService.Add(produto));
     }
 
     [HttpPut]
