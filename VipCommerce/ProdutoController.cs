@@ -18,9 +18,10 @@ namespace WebApi
     }
 
     [HttpGet]
-    public ActionResult Get()
+    [Route("{id}")]
+    public ActionResult Get(Guid id)
     {
-      return Ok();
+      return Ok(produtoAppService.Get(id));
     }
 
     [HttpPost]
@@ -30,15 +31,16 @@ namespace WebApi
     }
 
     [HttpPut]
-    public ActionResult Update()
+    public async Task<ActionResult> Update([FromBody] Requests.Produto produto)
     {
-      return Ok();
+      return Ok(await produtoAppService.Update(produto, produto.Id));
     }
 
     [HttpDelete]
-    public ActionResult Delete()
+    [Route("{id}")]
+    public async Task<ActionResult> Delete(Guid id)
     {
-      return Ok();
+      return Ok(await produtoAppService.Remove(id));
     }
   }
 }

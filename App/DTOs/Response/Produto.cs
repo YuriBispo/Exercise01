@@ -10,16 +10,21 @@ namespace App.DTOs.Response
   public class Produto
   {
     public Guid Id { get; private set; }
-    public Tamanho Tamanho { get; private set; }
+    public string Tamanho { get; private set; }
     public Fabricacao Fabricacao { get; private set; }
-    public Dinheiro Valor { get; private set; }
+    public decimal Valor { get; private set; }
+
+    public Produto()
+    {
+
+    }
 
     public Produto(Entity.Produto entity)
     {
       Id = entity.Id;
-      Tamanho = entity.Tamanho;
+      Tamanho = entity.Tamanho.ToString();
       Fabricacao = entity.Fabricacao;
-      Valor = entity.Valor;
+      Valor = entity.Valor.ToDecimal();
     }
   }
 }

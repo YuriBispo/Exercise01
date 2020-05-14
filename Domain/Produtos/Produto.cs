@@ -28,5 +28,16 @@ namespace Domain.Produtos
     public Dinheiro Valor { get; private set; }
 
     public abstract decimal CalcularImposto();
+
+    public void AtualizarValores(Guid id,
+      Tamanho tamanho,
+      Fabricacao fabricacao,
+      Dinheiro valor)
+    {
+      Id = id;
+      Fabricacao = fabricacao;
+      Tamanho = tamanho ?? throw new ArgumentNullException(nameof(tamanho));
+      Valor = valor ?? throw new ArgumentNullException(nameof(valor));
+    }
   }
 }

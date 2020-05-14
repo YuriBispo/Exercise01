@@ -22,14 +22,19 @@ namespace Infra.EntityFramework.Repositories
       return await Task.FromResult(entity);
     }
 
-    public async Task CommitChanges()
+    public async Task CommitChangesAsync()
     {
       await context.SaveChangesAsync();
     }
 
+    public void CommitChanges()
+    {
+      context.SaveChanges();
+    }
+
     public IQueryable<Produto> Get(Expression<Func<Produto, bool>> expression)
     {
-      return context.Produtos.AsNoTracking().Where(expression);
+      return context.Produtos.Where(expression);
     }
 
     public async Task<Produto> Remove(Produto entity)
@@ -38,10 +43,10 @@ namespace Infra.EntityFramework.Repositories
       return await Task.FromResult(entity);
     }
 
-    public Task<Produto> Update(Produto entity)
+    public async Task<Produto> Update(Produto entity)
     {
       context.Update(entity);
-      return Task.FromResult(entity);
+      return await Task.FromResult(entity);
     }
   }
 }

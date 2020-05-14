@@ -11,7 +11,7 @@ namespace App.IServices
   {
     Response.Produto Get(Guid id);
     Task<Response.Produto> Add(Request.Produto entity);
-    Task<Response.Produto> Update(Request.Produto entity);
+    Task<Response.Produto> Update(Request.Produto entity, Guid id);
     Task<Response.Produto> Remove(Guid id);
   }
 }

@@ -7,6 +7,7 @@ namespace Infra.EntityFramework.Repositories
 {
 	public interface IRepository
 	{
-		Task CommitChanges();
-	}
+		Task CommitChangesAsync();
+		void CommitChanges();
+  }
 }

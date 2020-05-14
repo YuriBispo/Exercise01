@@ -12,6 +12,7 @@ using Microsoft.Extensions.Configuration;
 using Infra.EntityFramework.Repositories;
 using App.IServices;
 using App.Services;
+using App.Services.Produto;
 
 namespace WebApi
 {
