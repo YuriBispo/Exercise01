@@ -11,6 +11,7 @@ namespace Infra.EntityFramework
   {
     public DbSet<ProdutoData> Produtos { get; set; }
     public DbSet<ClienteData> Clientes { get; set; }
+    public DbSet<PedidoData> Pedidos { get; set; }
 
     public MySqlContext(DbContextOptions<MySqlContext> options) : base(options)
     {
