@@ -1,16 +1,11 @@
-﻿using Request = App.DTOs.Request;
-using Response = App.DTOs.Response;
+﻿using App.Exceptions;
 using App.IServices;
-using Infra.EntityFramework.Repositories;
+using Infra.EntityFramework.Repositories.Produto;
 using System;
-using System.Collections.Generic;
-using System.Text;
-using System.Threading.Tasks;
-using Infra.EntityFramework;
-using Microsoft.EntityFrameworkCore;
-using App.Exceptions;
 using System.Linq;
-using Domain.Produtos.ValueObjects;
+using System.Threading.Tasks;
+using Request = App.DTOs.Request;
+using Response = App.DTOs.Response;
 
 namespace App.Services.Produto
 {
@@ -27,11 +22,11 @@ namespace App.Services.Produto
       if (!IsParameterValid(entity))
         throw new InvalidParametersException<IProdutoAppService>();
 
-      var produto = await produtoRepository.Add(entity.ConvertToDomain());
+      var produto = await produtoRepository.Add(entity.ConvertToData());
 
       await Salvar();
 
-      return new Response.Produto(produto);
+      return new Response.Produto();
     }
 
     public Response.Produto Get(Guid id)
@@ -42,7 +37,7 @@ namespace App.Services.Produto
       var prod = produtoRepository.Get(x => x.Id == id)
         .FirstOrDefault();
 
-      return new Response.Produto(prod);
+      return new Response.Produto();
     }
 
     public async Task<Response.Produto> Remove(Guid id)
@@ -56,7 +51,7 @@ namespace App.Services.Produto
       var result = await produtoRepository.Remove(produto);
 
       await Salvar();
-      return new Response.Produto(result);
+      return new Response.Produto();
     }
 
     public async Task Salvar()
@@ -77,17 +72,12 @@ namespace App.Services.Produto
       var produto = produtoRepository.Get(x => x.Id == id)
         .FirstOrDefault();
 
-      var domain = entity.ConvertToDomain();
-
-      produto.AtualizarValores(domain.Id, 
-        domain.Tamanho,
-        domain.Fabricacao, 
-        domain.Valor);
+      var domain = entity.ConvertToData();
 
       var result = await produtoRepository.Update(produto);
 
       SalvarSynchronously();
-      return new Response.Produto(result);
+      return new Response.Produto();
     }
 
     private bool IsParameterValid(DTOs.Request.Produto produto)

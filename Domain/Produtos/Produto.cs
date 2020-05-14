@@ -19,9 +19,6 @@ namespace Domain.Produtos
       Valor = valor ?? throw new ArgumentNullException(nameof(valor));
     }
 
-    //Empty ctor for EF
-    protected Produto(){}
-
     public Guid Id { get; private set; }
     public Tamanho Tamanho { get; private set; }
     public Fabricacao Fabricacao { get; private set; }

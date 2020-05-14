@@ -13,8 +13,6 @@ namespace Domain.Produtos
     {
     }
 
-    protected ProdutoNacional() { }
-
     public override decimal CalcularImposto()
     {
       if (Valor.MaiorQue(new Dinheiro(100)))

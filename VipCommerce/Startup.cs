@@ -13,6 +13,8 @@ using Infra.EntityFramework.Repositories;
 using App.IServices;
 using App.Services;
 using App.Services.Produto;
+using Infra.EntityFramework.Repositories.Produto;
+using Infra.EntityFramework.Repositories.Cliente;
 
 namespace WebApi
 {
@@ -37,6 +39,7 @@ namespace WebApi
 
       services.AddScoped<IProdutoAppService, ProdutoAppService>();
       services.AddScoped<IProdutoRepository, ProdutoRepository>();
+      services.AddScoped<IClienteRepository, ClienteRepository>();
 
       services.AddMvcCore()
         .AddJsonFormatters()

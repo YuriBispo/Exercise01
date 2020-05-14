@@ -1,6 +1,7 @@
 ﻿using Domain.Produtos;
 using Domain.Produtos.Enums;
 using Domain.Produtos.ValueObjects;
+using Infra.EntityFramework.Entities;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -15,7 +16,7 @@ namespace App.DTOs.Request
     public string Tamanho { get; set; }
     public decimal Valor { get; set; }
 
-    public Entity.Produto ConvertToDomain()
+    public ProdutoData ConvertToData()
     {
       var tamanho = Tamanho.Split(' ');
       var novoTamanho = new Tamanho(Convert.ToDecimal(tamanho[0]), tamanho[1]);
@@ -26,7 +27,7 @@ namespace App.DTOs.Request
         : ProdutoFactory
           .CriarProdutoInternacional(Id, novoTamanho, Fabricacao, new Dinheiro(Valor));
 
-      return produto;
+      return new ProdutoData(produto);
     }
   }
 }
