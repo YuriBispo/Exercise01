@@ -12,6 +12,7 @@ using System.Collections.Generic;
 using System.Text;
 using Response = App.DTOs.Response;
 using Request = App.DTOs.Request;
+using Infra.EntityFramework.Repositories.Produto;
 
 namespace Tests.Unit.App
 {

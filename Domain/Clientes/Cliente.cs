@@ -7,11 +7,11 @@ namespace Domain.Clientes
 {
   public class Cliente
   {
-    public Cliente(Guid id, string nome, CPF cPF, string sexo, string email)
+    public Cliente(Guid id, string nome, CPF CPF, string sexo, string email)
     {
       Id = id;
       Nome = nome ?? throw new ArgumentNullException(nameof(nome));
-      CPF = cPF ?? throw new ArgumentNullException(nameof(cPF));
+      CPF = CPF ?? throw new ArgumentNullException(nameof(CPF));
       Sexo = sexo ?? throw new ArgumentNullException(nameof(sexo));
       Email = email ?? throw new ArgumentNullException(nameof(email));
     }

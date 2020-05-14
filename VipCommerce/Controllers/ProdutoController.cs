@@ -6,7 +6,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Requests = App.DTOs.Request;
 
-namespace WebApi
+namespace WebApi.Controllers
 {
   [Route("/api/produtos")]
   public class ProdutoController : Controller
